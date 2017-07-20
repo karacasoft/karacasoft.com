@@ -1,0 +1,158 @@
+@font-face {
+  font-family: DekarLight;
+  src: url('../fonts/DekarLight.otf');
+}
+
+@font-face {
+  font-family: Dekar;
+  src: url('../fonts/Dekar.otf');
+}
+
+@keyframes weak-blink {
+  0% {
+    color: rgba(255, 255, 255, 1);
+  }
+  100% {
+    color: rgba(220, 220, 220, 1);
+  }
+}
+
+.background {
+  background-image: url("../img/wall.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  font-family: Dekar, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+p {
+  line-height: 130%;
+}
+
+/*------------- Big text -------------*/
+div#big-text {
+  padding-top: 100px;
+  height: 450px;
+  text-align: center;
+}
+
+div#big-text > p {
+  display: inline-block;
+  font-size: 80px;
+  
+  top: 200px;
+  color: #FFFFFF;  
+}
+
+div#big-text > p > .switching-text {
+  transition: all linear 0.2s;
+}
+
+div#big-text > p > .non-switching-text {
+  position: relative;
+}
+
+.flipped {
+  opacity: 0.0;
+  /*color: rgba(0, 0, 0, 0.0);*/
+}
+
+/*------------- Big text -------------*/
+
+/*------------- Profile  -------------*/
+
+div#profile {
+  text-align: center;
+}
+
+div#profile > .name {
+  display: inline;
+  animation: 1s weak-blink infinite;
+  animation-direction: alternate;
+  font-size: 40px;
+}
+
+
+/*------------- Profile  -------------*/
+
+/*------------- Style    -------------*/
+
+.style {
+  background: linear-gradient(to right, #ee0000 0%, 
+    #eeee00 15%,
+    #00ee00 30%,
+    #00eeee 45%,
+    #0000ee 60%,
+    #ee00ee 85%,
+    #ee0000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+}
+
+/*------------- Style    -------------*/
+
+
+
+/*------------- Content  -------------*/
+div#content {
+  padding: 5%;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  color: #ddd;
+  font-weight: bold;
+}
+
+.section {
+  margin-bottom: 150px;
+}
+
+.areas-expert > li {
+  cursor: pointer;
+}
+
+.areas-not-expert > li {
+  cursor: pointer;
+}
+
+.area-name {
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.area-experience {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.area-description {
+  display: none;
+  margin: 10px;
+}
+
+
+
+.project-name {
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.project-status {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.project-links {
+  
+}
+
+/*------------- Content  -------------*/
