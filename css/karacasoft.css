@@ -1,11 +1,11 @@
 @font-face {
-  font-family: DekarLight;
-  src: url('../fonts/DekarLight.otf');
+  font-family: Raleway-Light;
+  src: url('../fonts/Raleway/Raleway-Light.ttf');
 }
 
 @font-face {
-  font-family: Dekar;
-  src: url('../fonts/Dekar.otf');
+  font-family: Roboto-Light;
+  src: url('../fonts/Roboto/Roboto-Light.ttf');
 }
 
 @keyframes weak-blink {
@@ -17,6 +17,23 @@
   }
 }
 
+a {
+  color: #CCC;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EEE;
+}
+
+a:visited {
+  color: #888;
+}
+
+a:visited:hover {
+  color: #999;
+}
+
 .background {
   background-image: url("../img/wall.jpg");
   background-attachment: fixed;
@@ -25,11 +42,15 @@
 }
 
 body {
-  font-family: Dekar, sans-serif;
+  font-family: Raleway-Light;
   margin: 0;
   padding: 0;
   color: #FFFFFF;
   font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Roboto-Light;
 }
 
 p {
@@ -38,6 +59,7 @@ p {
 
 /*------------- Big text -------------*/
 div#big-text {
+  font-family: Roboto-Light;
   padding-top: 100px;
   height: 450px;
   text-align: center;
@@ -79,6 +101,33 @@ div#profile > .name {
   font-size: 40px;
 }
 
+div#profile > div.links {
+  margin: auto;
+  width: 400px;
+  height: 100px;
+}
+
+div#profile > div.links > a {
+  background-repeat: no-repeat;
+  fill: white;
+  padding: 10px;
+}
+
+div#profile > div.links > a.facebook-link > svg:hover {
+  fill: #3B5998;
+}
+
+div#profile > div.links > a.twitter-link > svg:hover {
+  fill: #4099FF;
+}
+
+div#profile > div.links > a.github-link > svg:hover {
+  fill: #000000;
+}
+
+div#profile > div.links > a.e-mail-link > svg:hover {
+  fill: #EE1111;
+}
 
 /*------------- Profile  -------------*/
 
@@ -116,12 +165,27 @@ div#content {
   margin-bottom: 150px;
 }
 
+ul.down-arrow > li {
+  list-style-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' stroke-width='5' stroke='white'></circle><polygon points='25,41.666666666666664 75,41.666666666666664 50,66.66666666666667' style='fill:white'></polygon></svg>");
+}
+
 .areas-expert > li {
   cursor: pointer;
+  color: #BBB;
+}
+
+.areas-expert > li:hover {
+  color: #EEE;
 }
 
 .areas-not-expert > li {
   cursor: pointer;
+  color: #BBB;
+}
+
+.areas-not-expert > li:hover {
+  cursor: pointer;
+  color: #EEE;
 }
 
 .area-name {
@@ -137,9 +201,26 @@ div#content {
 .area-description {
   display: none;
   margin: 10px;
+  color: #EEE;
 }
 
+ul.projects > li {
+  cursor: pointer;
+  color: #BBB;
+  
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  margin-top: 50px;
+}
 
+ul.projects > span {
+  font-size: 15px;
+  
+}
+
+ul.projects > li:hover {
+  color: #EEE;
+}
 
 .project-name {
   font-size: 25px;
@@ -151,8 +232,12 @@ div#content {
   margin-left: 10px;
 }
 
-.project-links {
-  
+.project-links > p {
+  color: #EEE;
+}
+
+.project-description {
+  display: none;
 }
 
 /*------------- Content  -------------*/

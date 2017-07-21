@@ -1,5 +1,5 @@
 var Util = new (function() {
-  this.downArrowSvg = function (size=20) {
+  this.downArrowSvg = function (size) {
     var trSize = size / 2;
     var strokeWidth = size / 20;
     
@@ -33,7 +33,7 @@ var BigTextController = function() {
     "Beautifully Implemented",
     "Cleverly Designed",
     "Exciting",
-    "This is how I build"
+    "Amazing",
   ];
   
   btCtrl.flipped = false;
@@ -68,17 +68,16 @@ var BigTextController = function() {
       $(".non-switching-text").css("top", diffTop);
       $(".non-switching-text").css("left", diffLeft);
       //$(".non-switching-text").stop();
-      $(".non-switching-text").animate({"top": 0, "left" : 0}, 200, function() {});
+      $(".non-switching-text").animate({"top": 0, "left" : 0}, 300, function() {});
       
       setTimeout(function() {
         btCtrl.flipped = false;
         $(".switching-text").removeClass("flipped");
-      }, 300);
+      }, 400);
       
-      
-    }, 200);
+    }, 300);
     
-  }, 3000);
+  }, 3500);
   
 };
 
@@ -197,7 +196,7 @@ var Areas = new (function() {
     $(css_selector).html("");
     for (var i = 0; i < list.length; i++) {
       var areaString = "<li>";
-      areaString += Util.downArrowSvg();
+      //areaString += Util.downArrowSvg();
       areaString += "<span class=\"area-name\">";
       areaString += list[i].name;
       areaString += "</span>";
@@ -244,15 +243,99 @@ var Projects = new (function() {
       status : "Sold"
     },
     {
-      
-    }
+      name : "Asteroid Rush",
+      description : "Asteroid Rush was the very first game I've developed "
+      + "for Android. It had a very simple objective with complex controls, "
+      + "and was too repetitive. Later versions of it had online scoreboards "
+      + "but I took the game down, due to a copyright infringement notice "
+      + "from Atari who said it creates customer confusion(!). I took the "
+      + "game down, and shared its source code on GitHub. (With a different "
+      + "name, of course!)",
+      links : [ "https://github.com/triforce930/4steroidRush" ],
+      status : "Discontinued"
+    },
+    {
+      name : "Video Player for Cardboard",
+      description : "This was my first attempt to create a Cardboard "
+      + "application. When the Cardboard was released, there was no "
+      + "video player (to my knowledge) that displayed 3D HSBS videos "
+      + "using 3D effects of the Cardboard. So I decided to build it "
+      + "myself. Learned how OpenGL 2.0 works along the way. Now, there "
+      + "are superior versions of VR video players, though mine sits there "
+      + "humbly waiting for its take down. PS: The old version of the "
+      + "application is on GitHub.",
+      links : [ 
+        "https://play.google.com/store/apps/details?id=com.karacasoft.cardboardmediaplayer",
+        "https://github.com/triforce930/CardboardVideoPlayer"
+      ],
+      status : "Discontinued, on Google Play Store"
+    },
+    {
+      name : "ColorPickerView for Android",
+      description : "I needed a color picker view for my Caps Yapıcı application. "
+      + "Instead of searching for a library, I thought, why wouldn't I write "
+      + "my own. And there it comes, the ColorPickerView. "
+      + "Not developed for 3-4 years!",
+      links : [ "https://github.com/triforce930/ColorPickerViewAndroid" ],
+      status : "On GitHub, not maintained for years"
+    },
+    {
+      name : "Tetris(160)",
+      description : "The name comes from our CMPE course. In the course "
+      + "we were given the task of building a Tetris game. "
+      + "They've given us a graphics library which was dependent "
+      + "on Java Swing library. I didn't like that, and built my game "
+      + "directly on Swing, using a custom component to draw on. "
+      + "I was new to the Tetris in that times, so I've built my own "
+      + "rotation system, included hard drop, unlimited lock delay "
+      + "while you move the pieces, hold, 1-piece preview, and "
+      + "increasing difficulty and local multiplayer. Also had "
+      + "a very simple AI which was part of the assignment as bonus.",
+      links : [ "https://github.com/triforce930/Tetris" ],
+      status : "On GitHub, too old, but the code is (kinda) well documented"
+    },
+    {
+      name : "KaOS",
+      description : "My operating system project. The name comes from my "
+      + "last name (Karaca OS). Also means 'chaos' in Turkish language. "
+      + "I dream of having releases with version names like: KaOS:Revenge, "
+      + "KaOS:Anarchy, which resembles chaotic things. This is actually a "
+      + "project to learn about how operating systems are developed, "
+      + "I don't really expect someting big coming from this. "
+      + "I like building my own components of software and sticking "
+      + "them together, so I actually enjoy building components of "
+      + "this project.",
+      links : [ "https://github.com/triforce930/KaOS",
+                "https://github.com/triforce930/ProjectKaOS"],
+      status : "Is being developed on GitHub"
+    },
+    {
+      name : "UI Framework for Cardboard",
+      description : "This came from the Video Player for Cardboard application "
+      + "Using pure OpenGL was not the best for designing UI's so "
+      + "I decided to build a UI framework to work with it faster. "
+      + "The framework works fine, but in Unity, there are a lot better "
+      + "tools to work for better UI's, so I left the project in the middle. "
+      + "The current version was used on the Video Player for Cardboard "
+      + "though.",
+      links : [ "https://github.com/triforce930/cardboard_ui_framework" ],
+      status : "Discontinued"
+    },
+    {
+      name : "GyroHand",
+      description : "This is my first hardware project. It's basically a "
+      + "glove with gyro sensors on it. It tracks the movements and "
+      + "transfers it to a computer via bluetooth.",
+      links : [ "http://blog.karacasoft.com/2017/04/04/the-computer-controlling-glove-thing/" ],
+      status : "Currently working on..."
+    },
   ];
   
   this.populateList = function(css_selector) {
     $(css_selector).html("");
     for (var i = 0; i < this.projects.length; i++) {
       var projectString = "<li>";
-      projectString += Util.downArrowSvg();
+      //projectString += Util.downArrowSvg(100);
       projectString += "<span class=\"project-name\">";
       projectString += this.projects[i].name;
       projectString += "</span>";
@@ -262,23 +345,24 @@ var Projects = new (function() {
       projectString += this.projects[i].status;
       projectString += "</span>";
       
+      projectString += "<p class=\"project-description\">";
+      projectString += this.projects[i].description;
+      projectString += "</p>";
+      
+      projectString += "</li>";
+      
       projectString += "<span class=\"project-links\">";
+      projectString += "<p>Project Links:</p>";
       projectString += "<ul>";
       for (var j = 0; j < this.projects[i].links.length; j++) {
         projectString += "<li>";
-        projectString += "<a href=\"" + this.projects[i].links[j] + "\">";
+        projectString += "<a target=\"blank\" href=\"" + this.projects[i].links[j] + "\">";
         projectString += this.projects[i].links[j];
         projectString += "</a>";
         projectString += "</li>";
       }
       projectString += "</ul>";
       projectString += "</span>";
-      
-      
-      projectString += "<p class=\"project-description\">";
-      projectString += this.projects[i].description;
-      projectString += "</p>";
-      projectString += "</li>";
       
       $(css_selector).append(projectString);  
     };
