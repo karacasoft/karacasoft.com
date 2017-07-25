@@ -45,8 +45,10 @@
         
         <div class="section">
           <h1>Seriously, What Do You Do?</h1>
-          <p>I've been into programming for like 6 years. I am currently studying Computer Engineering at
-          Bogazici University. In that time span, I worked with what my heart desired most.
+          <p>I am currently studying Computer Engineering at
+          Bogazici University. And I've been developing software for
+          (maybe) 6 years.
+          In that time span, I worked with what my heart desired most.
           Here's a list of what I have experience with, together with estimated times that 
           I worked with that specific area about software:</p>
           <ul class="areas-expert down-arrow">
@@ -74,11 +76,11 @@
         
         <div class="section">
           <h1>So what will you do now?</h1>
-          <p>I have absolutely no idea. I mostly do what I want to 
-          do in that specific time. Currently I want to finish my OS 
-          project. But in the meantime I can switch to working on the
-          GyroHand project. The thing is, I develop software, because it's
-          fun. If developing software start being boring to me, I'll 
+          <p>I have absolutely no idea. I mostly do what I want to
+          do in that specific time. Currently, I want to finish my OS
+          project. But in the meantime, I can switch to working on the
+          GyroHand project. The thing is, I develop software because it's
+          fun. If developing software start being boring to me, I'll
           switch to something else for a while and probably return back
           to developing more software.</p>
         </div>
