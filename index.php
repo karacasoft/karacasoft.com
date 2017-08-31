@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>KaracaSoft</title>
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/karacasoft.min.js"></script>
@@ -52,12 +53,106 @@
           Here's a list of what I have experience with, together with estimated times that 
           I worked with that specific area about software:</p>
           <ul class="areas-expert down-arrow">
+            <li>
+              <span class="area-name">Android</span>
+              <span class="area-experience">Experience: 3 years</span>
+              <p class="area-description">I've worked with Android from 2013 to
+                2015. I've had small hobby projects though but Android has
+                changed significantly, and I think I have lost my proficiency
+                in Android.</p>
+            </li>
+            <li>
+              <span class="area-name">Visual Basic 6.0</span>
+              <span class="area-experience">Experience: 1 year, this doesn't
+                really matter though since no one uses VB6.0 anyways :V</span>
+              <p class="area-description">My first love! I've started my
+                programming adventures with VB6.0. I still remember how easy
+                it was to setup a form and quickly define some actions on
+                buttons. Back then, programming was editing the code until it
+                works. Although I've had lots of brilliant(?) ideas, the
+                software design was not too brilliant. My persistence was the
+                key for me to open other gates of the software world. I once
+                debugged one of my simple games for a month to seek out one
+                single line that broke the whole game!!</p>
+            </li>
+            <li>
+              <span class="area-name">HTML/CSS/JS</span>
+              <span class="area-experience">Experience: A lot</span>
+              <p class="area-description">Every programmer should have basic
+                knowledge of this triplet. My story of how I met them is
+                different for each one of them. So I'll keep things simple
+                and say that I've been working with these since when I
+                started programming, until today where I build this website.
+                (With some help of jQuery though :V)</p>
+            </li>
+            <li>
+              <span class="area-name">PHP</span>
+              <span class="area-experience">Experience: 2 years (at least)</span>
+              <p class="area-description">I remember wondering how websites
+                with login features were built. With some research and prior
+                knowledge of scripting I've learned PHP. In high-school my
+                mates asked me to find a website where we can store photos
+                that we will select for our yearbook. And then, I, like every
+                sane person would do, decided to build it by myself. Very
+                few people used my site to store the photos. But it was a
+                great experience for me in PHP. Also the reaction of my
+                friends were priceless when I said I have built a site,
+                instead of finding one.</p>
+            </li>
+            <li>
+              <span class="area-name">Java</span>
+              <span class="area-experience">Experience: A lot more than
+                Android</span>
+              <p class="area-description">I've learned Java by learning
+                Android. (Yes, I never learned Java before Android) It
+                was kinda painful, though. The great thing was, I've started
+                learning the concepts of object oriented programming
+                by examining the example Android code from different
+                people. Since I've worked with it a lot, I'm very
+                comfortable to write any kind of application with Java.
+                (Frameworks kinda scare me, though) When I want to have
+                some proof of concept for some application idea, I
+                immediately open Eclipse and start designing it. I've
+                written a Tetris game with Java Swing Library. And my
+                last internship was about writing an application with
+                JavaFX, which makes use of Java 8 lambda functions a lot.
+              </p>
+            </li>
           </ul>
           
           <p>Here's a list of also what I have experience with, but contents of this list
             include the things that I have much less experience with:</p>
-          <ul class="areas-not-expert down-arrow">
-          </ul>
+            <ul class="areas-not-expert down-arrow">
+              <li><span class="area-name">C/C++</span><span class="area-experience">Experience: 1-2 years</span>
+                <p class="area-description">I've not written applications in C/C++. But used it in some everyday(!) cases
+                  like developing an operating system or writing Android Native codes with JNI
+                  linking.</p>
+              </li>
+              <li><span class="area-name">OS Development</span><span class="area-experience">Experience: A few months (in total)</span>
+                <p class="area-description">This is my latest trend I think. One day, I decided to build my own operating
+                  system. (Just like every sane person would think, right?) After fiddling around
+                  with x86 assembly codes for 3 days, I've managed to make a bootable USB drive
+                  that boots into a system that prints the text "Hello World!" on screen. Later
+                  that, I've managed to build more complex version of it (which can take keyboard
+                  inputs). Have the project on <a href="https://github.com/triforce930/KaOS">github</a>,
+                  please have a look!</p>
+              </li>
+              <li><span class="area-name">Arduino/Microcontrollers</span><span class="area-experience">Experience: A few months (in total)</span>
+                <p class="area-description">Arduino was a fascinating thing for me at first. The maker inside me was awakened,
+                  after seeing how Arduino can be used to make <a href="https://www.youtube.com/watch?v=ywfZsYApj_M">this</a>.
+                  Later, I bought one and worked with it for some time. Then bought some different
+                  modules and experimented with them.</p>
+              </li>
+              <li><span class="area-name">Game Engines</span><span class="area-experience">Experience: A few weeks (in total)</span>
+                <p class="area-description">(This should not be written here. I've very few works with these tools.) I've
+                  used Unity for some time, even developed plugins for it. Never developed fully
+                  built games with it though. Also attempted to make a game with libgdx.</p>
+              </li>
+              <li><span class="area-name">iOS</span><span class="area-experience">Experience: Not more than one day</span>
+                <p class="area-description">(This should not be here.). Thought I should learn it someday. Never learned,
+                  and I'm actually all right with it.</p>
+              </li>
+            </ul>
           
           <p>You can also click on these items to see useless stories about
           how I began writing in that specific area. Or things that are even more 
@@ -70,6 +165,67 @@
           <p>Here's (yet) another list of what I have done so far. Click on the
           items of the list to get some useless information about that project.</p>
           <ul class="projects down-arrow">
+            <li><span class="project-name">Caps Yapıcı / Meme Generator</span><span class="project-status">Status: Sold</span>
+              <p class="project-description">Caps Yapıcı was the leading application to generate memes that were becoming
+                increasingly popular in Turkey. Caps Yapıcı was the first application that
+                attempted to generate memes with red stripe and white text on it, which were
+                really popular in Turkey. Caps Yapıcı was also my very first Android application
+                that I've released. After a lot of reworks and fixes, (The application was
+                full of bugs/crashes), the application climbed up to 500k downloads, which
+                I was never thinking of. At 250k downloads I've sold the application which
+                is probably the reason why I should never touch business related stuff in my
+                life, later on.</p>
+            </li><span class="project-links"><p>Project Links:</p><ul><li><a target="blank" href="https://play.google.com/store/apps/details?id=com.karacasoft.capsyapici2">https://play.google.com/store/apps/details?id=com.karacasoft.capsyapici2</a></li></ul></span>
+            <li><span class="project-name">Asteroid Rush</span><span class="project-status">Status: Discontinued</span>
+              <p class="project-description">Asteroid Rush was the very first game I've developed for Android. It had a very
+                simple objective with complex controls, and was too repetitive. Later versions
+                of it had online scoreboards but I took the game down, due to a copyright infringement
+                notice from Atari who said it creates customer confusion(!). I took the game
+                down, and shared its source code on GitHub. (With a different name, of course!)</p>
+            </li><span class="project-links"><p>Project Links:</p><ul><li><a target="blank" href="https://github.com/triforce930/4steroidRush">https://github.com/triforce930/4steroidRush</a></li></ul></span>
+            <li><span class="project-name">Video Player for Cardboard</span><span class="project-status">Status: Discontinued, on Google Play Store</span>
+              <p class="project-description">This was my first attempt to create a Cardboard application. When the Cardboard
+                was released, there was no video player (to my knowledge) that displayed 3D
+                HSBS videos using 3D effects of the Cardboard. So I decided to build it myself.
+                Learned how OpenGL 2.0 works along the way. Now, there are superior versions
+                of VR video players, though mine sits there humbly waiting for its take down.
+                PS: The old version of the application is on GitHub.</p>
+            </li><span class="project-links"><p>Project Links:</p><ul><li><a target="blank" href="https://play.google.com/store/apps/details?id=com.karacasoft.cardboardmediaplayer">https://play.google.com/store/apps/details?id=com.karacasoft.cardboardmediaplayer</a></li><li><a target="blank" href="https://github.com/triforce930/CardboardVideoPlayer">https://github.com/triforce930/CardboardVideoPlayer</a></li></ul></span>
+            <li><span class="project-name">ColorPickerView for Android</span><span class="project-status">Status: On GitHub, not maintained for years</span>
+              <p class="project-description">I needed a color picker view for my Caps Yapıcı application. Instead of searching
+                for a library, I thought, why wouldn't I write my own. And there it comes,
+                the ColorPickerView. Not developed for 3-4 years!</p>
+            </li><span class="project-links"><p>Project Links:</p><ul><li><a target="blank" href="https://github.com/triforce930/ColorPickerViewAndroid">https://github.com/triforce930/ColorPickerViewAndroid</a></li></ul></span>
+            <li><span class="project-name">Tetris(160)</span><span class="project-status">Status: On GitHub, too old, but the code is (kinda) well documented</span>
+              <p class="project-description">The name comes from our CMPE course. In the course we were given the task of
+                building a Tetris game. They've given us a graphics library which was dependent
+                on Java Swing library. I didn't like that, and built my game directly on Swing,
+                using a custom component to draw on. I was new to the Tetris in that times,
+                so I've built my own rotation system, included hard drop, unlimited lock delay
+                while you move the pieces, hold, 1-piece preview, and increasing difficulty
+                and local multiplayer. Also had a very simple AI which was part of the assignment
+                as bonus.</p>
+            </li><span class="project-links"><p>Project Links:</p><ul><li><a target="blank" href="https://github.com/triforce930/Tetris">https://github.com/triforce930/Tetris</a></li></ul></span>
+            <li><span class="project-name">KaOS</span><span class="project-status">Status: Is being developed on GitHub</span>
+              <p class="project-description">My operating system project. The name comes from my last name (Karaca OS). Also
+                means 'chaos' in Turkish language. I dream of having releases with version
+                names like: KaOS:Revenge, KaOS:Anarchy, which resembles chaotic things. This
+                is actually a project to learn about how operating systems are developed, I
+                don't really expect someting big coming from this. I like building my own components
+                of software and sticking them together, so I actually enjoy building components
+                of this project.</p>
+            </li><span class="project-links"><p>Project Links:</p><ul><li><a target="blank" href="https://github.com/triforce930/KaOS">https://github.com/triforce930/KaOS</a></li><li><a target="blank" href="https://github.com/triforce930/ProjectKaOS">https://github.com/triforce930/ProjectKaOS</a></li></ul></span>
+            <li><span class="project-name">UI Framework for Cardboard</span><span class="project-status">Status: Discontinued</span>
+              <p class="project-description">This came from the Video Player for Cardboard application Using pure OpenGL was
+                not the best for designing UI's so I decided to build a UI framework to work
+                with it faster. The framework works fine, but in Unity, there are a lot better
+                tools to work for better UI's, so I left the project in the middle. The current
+                version was used on the Video Player for Cardboard though.</p>
+            </li><span class="project-links"><p>Project Links:</p><ul><li><a target="blank" href="https://github.com/triforce930/cardboard_ui_framework">https://github.com/triforce930/cardboard_ui_framework</a></li></ul></span>
+            <li><span class="project-name">GyroHand</span><span class="project-status">Status: Currently working on...</span>
+              <p class="project-description">This is my first hardware project. It's basically a glove with gyro sensors on
+                it. It tracks the movements and transfers it to a computer via bluetooth.</p>
+            </li><span class="project-links"><p>Project Links:</p><ul><li><a target="blank" href="http://blog.karacasoft.com/2017/04/04/the-computer-controlling-glove-thing/">http://blog.karacasoft.com/2017/04/04/the-computer-controlling-glove-thing/</a></li></ul></span>
           </ul>
         </div>
         

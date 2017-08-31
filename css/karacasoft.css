@@ -1,3 +1,28 @@
+@media (max-width: 800px) {
+  div#content {
+    width: 90%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  
+  div#big-text > p {
+    font-size: 10vw; 
+  }
+  
+}
+
+@media (min-width: 800px) {
+  div#content {
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  div#big-text > p {
+    font-size: 80px; 
+  }
+}
+
 @font-face {
   font-family: Raleway-Light;
   src: url('../fonts/Raleway/Raleway-Light.ttf');
@@ -39,6 +64,9 @@ a:visited:hover {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
@@ -61,14 +89,13 @@ p {
 div#big-text {
   font-family: Roboto-Light;
   padding-top: 100px;
+  max-width: 100%;
   height: 450px;
   text-align: center;
 }
 
 div#big-text > p {
   display: inline-block;
-  font-size: 80px;
-  
   top: 200px;
   color: #FFFFFF;  
 }
@@ -91,6 +118,7 @@ div#big-text > p > .non-switching-text {
 /*------------- Profile  -------------*/
 
 div#profile {
+  
   text-align: center;
 }
 
@@ -152,13 +180,10 @@ div#profile > div.links > a.e-mail-link > svg:hover {
 
 /*------------- Content  -------------*/
 div#content {
-  padding: 5%;
   background-color: rgba(0, 0, 0, 0.5);
-  width: 90%;
-  max-width: 800px;
-  margin: auto;
   color: #ddd;
   font-weight: bold;
+  padding: 5%;
 }
 
 .section {
