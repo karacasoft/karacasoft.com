@@ -9,6 +9,16 @@
     font-size: 10vw; 
   }
   
+  body {
+    background-color: #444;
+  }
+  
+  .background {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 210%;
+  }
+  
 }
 
 @media (min-width: 800px) {
@@ -20,6 +30,12 @@
   
   div#big-text > p {
     font-size: 80px; 
+  }
+  
+  .background {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -61,10 +77,6 @@ a:visited:hover {
 
 .background {
   background-image: url("../img/wall.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
   margin: 0px;
   padding: 0px;
 }
@@ -75,10 +87,15 @@ body {
   padding: 0;
   color: #FFFFFF;
   font-size: 20px;
+  word-wrap: break-word;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Roboto-Light;
+}
+
+div {
+  max-width: 100%;
 }
 
 p {
@@ -157,6 +174,10 @@ div#profile > div.links > a.e-mail-link > svg:hover {
   fill: #EE1111;
 }
 
+div#profile img.img-round {
+  border-radius: 100px;
+}
+
 /*------------- Profile  -------------*/
 
 /*------------- Style    -------------*/
@@ -224,7 +245,6 @@ ul.down-arrow > li {
 }
 
 .area-description {
-  display: none;
   margin: 10px;
   color: #EEE;
 }
@@ -262,7 +282,6 @@ ul.projects > li:hover {
 }
 
 .project-description {
-  display: none;
 }
 
 /*------------- Content  -------------*/
