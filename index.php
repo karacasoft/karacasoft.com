@@ -53,10 +53,13 @@
           In that time span, I worked with what my heart desired most.
           Here's a list of what I have experience with, together with estimated times that 
           I worked with that specific area about software:</p>
-          <p>You can click on these items to hide the useless stories about
-          how I began writing in that specific area.</p>
-          <p>Just want the list? This button will collapse every single
-          description text on this page.</p>
+          <p>You can click on these items to <strike>hide</strike> show the useless stories about
+          how I began learning stuff in that specific area.</p>
+          <p><strike>Just want the list? This button will collapse every single
+          description text on this page.</strike> It turns out, in the 21st century
+          nobody actually reads text anymore. For convenience, I've just hidden the
+          unnecessary information before hand. I'm too lazy to change the function of
+          the button below, lol.</p>
           <button 
             id="hide-every-single-description-i-might-be-able-to-see-in-this-page-button">
             Hide Every Single Description I 
@@ -67,8 +70,9 @@
               <span class="area-experience">Experience: 3 years</span>
               <p class="description">I've worked with Android from 2013 to
                 2015. I've had small hobby projects though but Android has
-                changed significantly, and I think I have lost my proficiency
-                in Android.</p>
+                changed significantly, <strike>and I think I have lost my proficiency
+                in Android.</strike> Thinking about this again, maybe I just don't
+                want to write Android anymore.</p>
             </li>
             <li>
               <span class="area-name">Visual Basic 6.0</span>
