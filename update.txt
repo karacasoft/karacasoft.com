@@ -1,0 +1,4 @@
+Use
+
+$ rsync --exclude .git --exclude .gitignore --exclude README.md -rvz . IPADDRESS:/var/www
+
